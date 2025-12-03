@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishant Sikdar | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">IS</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm Ishant, a</p>
+            <h1 class="hero-title">
+                <span class="title-line">Software</span>
+                <span class="title-line">Engineer</span>
+            </h1>
+            <p class="hero-subtitle">I build dynamic web applications from concept to deployment</p>
+            
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://medium.com" target="_blank" class="social-btn" aria-label="Medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                    </svg>
+                    <span>Medium</span>
+                </a>
+                <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://leetcode.com" target="_blank" class="social-btn" aria-label="LeetCode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/>
+                    </svg>
+                    <span>LeetCode</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span>Twitter</span>
+                </a>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download Resume
+                </a>
+                <a href="mailto:ishant9715@gmail.com" class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    Mail
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-info">
+            <p class="info-text">I specialize in developing and deploying <strong>scalable web applications.</strong></p>
+            <p class="info-text">I expertise in building apps on <strong>Java</strong> and <strong>TypeScript</strong></p>
+            <p class="info-text highlight">Currently working on <span class="tech-highlight">Golang</span>, <span class="tech-highlight">Nest.js</span> and <span class="tech-highlight">AWS</span>.</p>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="section-header">
+            <h2 class="section-title">Experience</h2>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <div class="job-info">
+                            <span class="job-date">July 2024 - July 2025</span>
+                            <h3 class="company-name">FUTY</h3>
+                            <p class="job-location">London, United Kingdom - Remote</p>
+                            <p class="job-title">Software Development Engineer</p>
+                        </div>
+                    </div>
+                    <ul class="job-description">
+                        <li>Designed and delivered multiple production-ready modules for gaming and fintech applications across DEV, UAT, and PROD environments, using React, Node.js, and SQL, ensuring smooth feature deployments.</li>
+                        <li>Reduced API latency by 90% in a real-time battleship-style game by implementing asynchronous job processing with BullMQ and Redis caching, improving in-game responsiveness from 2.5 seconds to 200ms.</li>
+                        <li>Built a high-availability fantasy sports platform ("FUTY") for 2K+ users using React, TailwindCSS, and AWS S3 + CloudFront, achieving sub-200ms asset delivery via CDN.</li>
+                        <li>Refactored the core AWS S3 integration to support MinIO-compatible endpoints, enabling the use of self-hosted object storage for cost savings and data control.</li>
+                        <li>Developed a robust loan management system with Node.js, React, and SQL, incorporating form validations, transaction tracking, and error handling to reduce loan tracking errors by 35%.</li>
+                        <li>Mentored junior developers through code reviews, pair programming, and debugging sessions, improving overall team code quality and reducing bug recurrence.</li>
+                        <li>Collaborated with cross-functional teams via Agile sprints and Jira tracking, ensuring clear requirements and delivering product features on time in over 95% of sprints.</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">NestJS</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">React Native</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <div class="job-header">
+                        <div class="job-info">
+                            <span class="job-date">Nov 2023 - May 2024</span>
+                            <h3 class="company-name">Opalina Technologies</h3>
+                            <p class="job-location">Noida, India</p>
+                            <p class="job-title">Software Engineer</p>
+                        </div>
+                    </div>
+                    <ul class="job-description">
+                        <li>Architected and developed a loan management & collection system using Java, Spring Boot, and MongoDB, deploying it across DEV, UAT, and PROD environments, processed 1,000+ loan applications and accounts post launch.</li>
+                        <li>Implemented push notification scheduling using Cron jobs and batch processing to remind employees about daily tasks, improving timely task completion by 80%.</li>
+                        <li>Optimized MongoDB performance by simplifying and restructuring the schema for maintainability while meeting business requirements, resulting in easier query handling and reduced development complexity.</li>
+                        <li>Reduced MongoDB query response times by 70% through aggregation pipeline optimization, strategic indexing, and schema tuning, significantly improving API response times.</li>
+                        <li>Participated in Agile sprints by contributing to sprint planning, backlog discussions, and peer code reviews, helping ensure timely delivery of planned features in a fast-paced environment.</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2 class="section-title">My Past Work</h2>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card" data-aos="fade-up">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-name">Disaster Data API</h3>
+                        <span class="project-date">Aug 2024</span>
+                    </div>
+                    <p class="project-description">Real-time system designed to collect, process, and distribute media content related to natural disasters from social media platforms and distribute using HTTP protocol.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Hibernate</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-name">eWallet</h3>
+                        <span class="project-date">July 2024</span>
+                    </div>
+                    <p class="project-description">Aims to perform operations like a real e-wallet applications like PayTM. Transfer funds from one user to another, deposit and withdraw funds from external banks.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-name">Sway</h3>
+                        <span class="project-date">June 2024</span>
+                    </div>
+                    <p class="project-description">Streamline access to educational content from YouTube. Users can search for topics that they want to study, and the app will provide curated subtopics with relevant YouTube videos.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </article>
+
+            <article class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-content">
+                    <div class="project-header">
+                        <h3 class="project-name">SpaceX</h3>
+                        <span class="project-date">October 2023</span>
+                        <a href="#" class="visit-link">Visit</a>
+                    </div>
+                    <p class="project-description">Developed a UI clone of 'spacex.com' using raw CSS and JavaScript. Created interactive and visually appealing animations to closely match the official 'spacex.com' site.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">HTML</span>
+                    </div>
+                </div>
+                <div class="project-glow"></div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="techstack" class="techstack">
+        <div class="section-header">
+            <h2 class="section-title">My Tech Stack</h2>
+            <p class="section-subtitle">I apply my knowledge of different technologies to deliver practical solutions across multiple platforms</p>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-item" data-aos="zoom-in">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                </div>
+                <span class="tech-name">Java</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="50">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+                </div>
+                <span class="tech-name">Spring Boot</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                </div>
+                <span class="tech-name">TypeScript</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+                </div>
+                <span class="tech-name">Next.js</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                </div>
+                <span class="tech-name">PostgreSQL</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="250">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                </div>
+                <span class="tech-name">Docker</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis">
+                </div>
+                <span class="tech-name">Redis</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="350">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js">
+                </div>
+                <span class="tech-name">React.js</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="tech-icon">
+                    <img src="https://recoiljs.org/img/logo.svg" alt="Recoil.js">
+                </div>
+                <span class="tech-name">Recoil.js</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="450">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                </div>
+                <span class="tech-name">MongoDB</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="500">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                </div>
+                <span class="tech-name">Node.js</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="550">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js">
+                </div>
+                <span class="tech-name">Express.js</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="600">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS">
+                </div>
+                <span class="tech-name">AWS</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="650">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                </div>
+                <span class="tech-name">Linux</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="700">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                </div>
+                <span class="tech-name">Git</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="750">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                </div>
+                <span class="tech-name">JavaScript</span>
+            </div>
+            <div class="tech-item" data-aos="zoom-in" data-aos-delay="800">
+                <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                </div>
+                <span class="tech-name">Tailwind CSS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <div class="banner-content">
+            <h2>Delivering Precision and Performance in Tech</h2>
+            <p class="location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                </svg>
+                Delhi, India
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Ishant Sikdar © 2024</h3>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Explore More</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Socials</h4>
+                    <ul>
+                        <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://medium.com" target="_blank">Medium</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                        <li><a href="https://leetcode.com" target="_blank">LeetCode</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Others</h4>
+                    <ul>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="mailto:ishant9715@gmail.com">ishant9715@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Ishant Sikdar © 2024</p>
+            <p>Delhi, India</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

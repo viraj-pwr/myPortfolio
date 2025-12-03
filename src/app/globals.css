@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 10.5%;
+    --foreground: 36 24% 85%;
+    --card: 0 0% 10.5%;
+    --card-foreground: 36 24% 85%;
+    --popover: 0 0% 10.5%;
+    --popover-foreground: 36 24% 85%;
+    --primary: 36 24% 85%;
+    --primary-foreground: 0 0% 10.5%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 36 24% 85%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 164 48% 53%;
+    --accent-foreground: 0 0% 10.5%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 164 48% 53%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-color: #1b1b1b;
+  }
+}
+
+.star-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+  transition: transform 0.15s ease-out;
+  will-change: transform;
+}
+
+.star:nth-child(odd) {
+  animation: twinkle 4s infinite;
+}
+
+.star:nth-child(3n) {
+  animation: twinkle 2.5s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Social icon animations */
+.social-icon {
+  @apply relative flex flex-col items-center;
+}
+
+.social-icon-img {
+  @apply w-11 h-11 p-2.5 rounded-xl transition-all duration-200 ease-out;
+  background: transparent;
+}
+
+.social-icon-img-white {
+  @apply w-11 h-11 p-2.5 rounded-xl transition-all duration-200 ease-out;
+  background: transparent;
+  filter: brightness(0) invert(1);
+}
+
+.social-icon:hover .social-icon-img {
+  @apply scale-105;
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon:hover .social-icon-img-white {
+  @apply scale-105;
+  background: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon-label {
+  @apply absolute top-full mt-2 text-sm text-cyan-400 opacity-0 transition-all duration-200 whitespace-nowrap pointer-events-none;
+  transform: translateY(-5px);
+}
+
+.social-icon:hover .social-icon-label {
+  @apply opacity-100;
+  transform: translateY(0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll reveal animations */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-fade-up.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger animation delays */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
