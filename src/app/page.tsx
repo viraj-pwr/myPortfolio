@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { blogs } from "./data/blogs";
 
 // Custom hook for scroll animations
@@ -131,10 +132,13 @@ export default function Home() {
           <div className="text-center max-w-5xl mx-auto">
             {/* Profile Photo */}
             <div className="mb-8">
-              <img 
+              <Image 
                 src="/viraj.jpg" 
                 alt="Viraj Pawar" 
+                width={192}
+                height={192}
                 className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-cyan-400/50 shadow-xl shadow-cyan-400/20"
+                priority
               />
             </div>
             
