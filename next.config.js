@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: 'export',
+    basePath: '/myPortfolio',
+    assetPrefix: '/myPortfolio/',
+    trailingSlash: true,
     allowedDevOrigins: ["*.preview.same-app.com"],
     images: {
       unoptimized: true,
